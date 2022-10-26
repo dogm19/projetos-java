@@ -1,0 +1,41 @@
+package Pessoa;
+
+public class Pessoa01 {
+	
+	private String nome;
+	private int ano;
+	private int dataNascimento;	
+	private Double altura;
+	
+	public Pessoa01(String nome, int dataNascimento, int ano, Double altura){
+		this.nome = nome;
+		this.ano = ano;
+		this.dataNascimento = dataNascimento;		
+		this.altura = altura;
+	}
+	public String getNome(){
+		return nome;
+	}
+	public void setNome(String nome){
+		
+		this.nome = nome;
+	}
+	public int getDataNascimento(){
+		return this.ano - this.dataNascimento;
+	}
+	public void setDataNascimento(int ano, int dataNascimento){
+		this.dataNascimento = dataNascimento;
+	}
+	public Double getAltura(){
+		return altura;
+	}
+	public void setAltura(Double altura){
+		this.altura = this.altura;
+	}
+	public void apresentaPessoa(){
+		System.out.println("Seu nome é: " + this.getNome());
+		System.out.println("Seu ano de nascimento é: " + this.dataNascimento);
+		System.out.println("Sua altura é: " + getAltura());
+		System.out.println("Sua idade é: " + this.getDataNascimento());
+	}
+}
