@@ -1,0 +1,11 @@
+package Agenda;
+
+public class Main {
+
+	public static void main(String[] args){
+		Agenda ag = new Agenda();
+		
+		ag.armazenarPessoa(null, 0, 0);
+	}
+
+}
