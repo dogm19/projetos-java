@@ -58,7 +58,7 @@ public class Velocidade extends Carro{
 		}
 	}
 	public void trocaMarcha() {
-		System.out.println("(1)(2)(4)(5)");
+		System.out.println("(1)(3)(2)(4)(5)");
 		marcha = entrada.nextInt();
 		
 		if(marcha == 1) {
@@ -74,7 +74,7 @@ public class Velocidade extends Carro{
 			System.out.println("marcha (4)");
 		}
 		else if(marcha == 5) {
-			System.out.println("marcha (5)");
+			System.out.println("marcha (R)");
 		}
 		else {
 			System.out.println("========ERROR========");
